@@ -4,7 +4,7 @@ class CashRegister
   @@item_name = []
   @@cart = []
 
-  def initialize(discount = nil)
+  def initialize(discount = 0)
     @total = 0
     @discount = discount
   end
@@ -23,7 +23,7 @@ class CashRegister
   end
 
   def apply_discount
-    if @discount != nil
+    if @discount != 0
       @total *= (1 - discount/100)
       puts "After the discount, the total comes to $#{@total}."
     else
