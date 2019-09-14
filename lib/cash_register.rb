@@ -33,7 +33,7 @@ class CashRegister
 
 
   def items
-    @@items
+    @@item_name
   end
 
 
