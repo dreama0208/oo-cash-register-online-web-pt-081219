@@ -12,7 +12,7 @@ class CashRegister
     quantity.times {@@items << product}
   end
 
-  def apply_discount（discount = nil)
+  def apply_discount
     if discount
       @total *= (1 - discount)
       puts "After the discount, the total comes to $#{@total}."
