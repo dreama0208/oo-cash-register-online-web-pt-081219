@@ -10,6 +10,6 @@ attr_accessor :total
   end
 
   def apply_discount
-
+    @total *= 0.8
   end
 end
