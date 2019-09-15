@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :last_transaction_amount
   @@item_name = []
   @@cart = []
 
@@ -41,8 +41,10 @@ class CashRegister
     if a == {}
       self.total = 0.0
     else
-      self.total = @total - @@cart.pop[:price]
       a = @@cart.pop
+      last
+      @total -= @@cart.pop[:price]!
+
     end
   end
 
