@@ -42,6 +42,7 @@ class CashRegister
       self.total = 0
     else
     self.total = @total - @@cart.pop[:price]
+    @@cart = @@cart.pop
     end
   end
 
