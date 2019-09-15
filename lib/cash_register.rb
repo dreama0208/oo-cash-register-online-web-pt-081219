@@ -13,7 +13,7 @@ class CashRegister
     item_info = {}
     item_info[:name] = product
     item_info[:price] = price
-    item_info[:qunatity] = quantity
+    item_info[:quantity] = quantity
 
     @@cart << item_info
 
@@ -38,7 +38,7 @@ class CashRegister
 
 
   def void_last_transaction
-    @total -= 0
+    self.total = @total - @@cart.pop[:price]
   end
 
 end
