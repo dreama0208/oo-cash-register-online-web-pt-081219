@@ -39,7 +39,7 @@ class CashRegister
     else
       a = @@cart.pop
       last
-      @total -= @@cart.pop[:price]!
+      @total -= @@price.pop!
 
     end
   end
