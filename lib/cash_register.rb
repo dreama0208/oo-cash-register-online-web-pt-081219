@@ -34,7 +34,7 @@ class CashRegister
 
 
   def void_last_transaction
-    if price == []
+    if @@price == []
       self.total = 0.0
     else
       @total -= @@price.pop!
