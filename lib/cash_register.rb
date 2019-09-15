@@ -38,7 +38,11 @@ class CashRegister
 
 
   def void_last_transaction
-    self.total = @total - @@cart.pop[:price]
+    if @@cart == {}
+      self.total = 0
+    else
+    self.total = @total - @@cart.pop![:price]
+    end
   end
 
 end
