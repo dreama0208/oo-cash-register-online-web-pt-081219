@@ -41,8 +41,9 @@ class CashRegister
     if @@cart == {}
       self.total = 0
     else
-    self.total = @total - @@cart.pop![:price]
+    self.total = @total - @@cart.pop[:price]
     end
   end
 
 end
+s
