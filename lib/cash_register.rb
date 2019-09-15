@@ -37,7 +37,7 @@ class CashRegister
     if @@price == []
       self.total = 0.0
     else
-      @total -= @@price.pop!
+      @total -= @@price.pop
 
     end
   end
